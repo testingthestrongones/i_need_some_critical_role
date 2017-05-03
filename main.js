@@ -58,7 +58,9 @@ var videos = ["https://youtu.be/yE27NwtXjPY?start=1480",
                 "https://youtu.be/DlXEvkhbQqo",
                 "https://youtu.be/N7DuwqJtCGI?start=7271",
                 "https://youtu.be/9EToAf4nhDw?start=12490",
-                "https://youtu.be/uw1crQ1d9AU?start=10454",]
+                "https://youtu.be/uw1crQ1d9AU?start=10454",
+                "https://youtu.be/kOaslxt8wyc",
+                ]
             
 function newVideo() {
 
@@ -67,5 +69,6 @@ function newVideo() {
     var embedCode = "https://www.youtube.com/embed/" + videoID + "&autoplay=1"
     
     document.getElementById('cr-video').src = embedCode
+    document.getElementById('cr-video').contentWindow.focus();
 
 }
